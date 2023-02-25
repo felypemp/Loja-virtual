@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 html,body{
@@ -49,7 +52,114 @@ html,body{
     background: #c3bcb7;
 }
 
+.call{
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.direita, .esquerda{
+    width:50%;
+    min-height: 600px;
+    max-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 0 2%;
+}
+
+img{
+    width: 70%;
+    object-fit: contain;
+}
+
+button{
+    padding: 10px 20px;
+    background: #1b3b56;
+    color: #fff;
+    font-size:14px;
+    border: none;
+    cursor: pointer;
+    transition: 0.8s ease;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+button:hover {
+    border: 1px solid #8b634a;
+    background: #8b634a;
+    color: #fff;
+    transform: scale(1.10);
+}
+
+.texto-pq{
+    font-size:20px;
+}
+.texto-md{
+    font-size: 42px;
+}
+
+.texto-gd{
+    font-size: 72px;
+}
+
+.texto-titulo{
+    font-size: 20px;
+    font-weight:600;
+}
+
+.color-azul{
+    color:#1b3b56;
+}
+
+.color-azul-1{
+    color:#5271ff;
+}
+
+.color-cinza{
+    color:#545454;
+}
+
+
+/* #### desktop-menu #### */
+
+.desktop-menu ul{
+    display: flex;
+}
+
+.desktop-menu ul li{
+    padding: 0 25px;
+    list-style-type: none;
+
+}
+
+.desktop-menu ul li a{
+    color: #17203f;
+    text-shadow: 0 0 5px #848790;
+    font-size: 23px;
+    font-weight: 300;
+    text-decoration: none;
+    
+
+}
+
+.desktop-menu ul li a:hover{
+    color:#8B634A;
+    text-shadow: 0 0 5px #8B634A;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+
+
+/* ##### HEADER #####*/
+
 header .container{
     flex-direction: column;
     justify-content: flex-start;
+}
+
+header .esquerda{
+    flex-direction: column;
+    align-items: flex-start;
 }
