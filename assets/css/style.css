@@ -163,3 +163,25 @@ header .esquerda{
     flex-direction: column;
     align-items: flex-start;
 }
+
+header .esquerda h1{
+    text-align: start;
+    font-weight: 400;
+    text-shadow: 0 0 5px #848790;
+    padding: 0 40px;;
+}
+
+header .esquerda p{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    text-align: start;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px #848790;
+    margin-top: 60px;
+    padding: 0 40px;
+}
+
+header button{
+    margin-top:60px;
+    margin-left: 40px;
+}
