@@ -201,3 +201,71 @@ header .direita .imagem img{
 }
 
 /* ##### Responsivo #####*/
+
+@media screen and (max-width: 922px){
+    .texto-pq{
+        font-size:13px;
+    }
+    .texto-md{
+        font-size: 28px;
+    }
+    
+    .texto-gd{
+        font-size: 54px;
+    }
+}
+
+@media screen and (max-width: 740px){
+    header .direita .imagem{
+        width: 100%;
+    }
+
+    .desktop-menu ul{
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 648px){
+    .esquerda {
+        width: 100%;
+        min-height: auto;
+        padding: 0 2%;
+    }
+
+    .direita{
+        width: 100%;
+        min-height: auto;
+        padding: 0 2%;
+        margin-top: -60px;
+    }
+
+    .logo{
+        width: 110%;
+        left: 5px;
+    }
+
+    img{
+        width: 90%;
+    }
+
+    .call{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    header .direita{
+        margin-top: -100px;
+    }
+
+    header .direita .imagem{
+        width: 60%;
+
+    }
+}
+
+@media screen and (max-width: 428px){
+    header .direita .imagem{
+        width: 80%;
+    }
+}
