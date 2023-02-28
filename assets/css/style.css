@@ -17,7 +17,7 @@ html,body{
 }
 
 .bg{
-    background: url('../image/bg-2.png') no-repeat;
+    background: url('../image/bg_parede.jpg') no-repeat;
     background-size: cover;
     width: 100%;
     height: auto
@@ -49,7 +49,7 @@ html,body{
     align-items: center;
     justify-content: space-between;
     padding: 0 2%;
-    background: #c3bcb7;
+    background: #000;
 }
 
 .call{
@@ -120,6 +120,27 @@ button:hover {
     color:#545454;
 }
 
+#voltar{
+    position:fixed;
+    bottom:2px;
+    right: 10px;
+    padding: 5px 10px;
+    background: #8b634a;
+}
+
+body::-webkit-scrollbar{
+    width:12px
+}
+
+body::-webkit-scrollbar-track{
+    background: #fff;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #2b2b2b;
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
 
 /* #### desktop-menu #### */
 
@@ -134,7 +155,7 @@ button:hover {
 }
 
 .desktop-menu ul li a{
-    color: #17203f;
+    color: #fff;
     text-shadow: 0 0 5px #848790;
     font-size: 23px;
     font-weight: 300;
@@ -150,7 +171,49 @@ button:hover {
     text-decoration: underline;
 }
 
+/* #### mobile-menu #### */
 
+.mobile-menu{
+    width:95%;
+    height: auto;
+    position: absolute;
+    top: 5px;
+    background: #000;
+    display: none;
+}
+
+.mobile-menu i{
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    font-size: 23px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.mobile-menu ul{
+    display: block;
+    text-align: center;
+}
+
+.mobile-menu ul li{
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.mobile-menu ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 5px #848790;
+}
+
+.mobile-menu ul li a:hover{
+    color:#8B634A;
+    text-shadow: 0 0 5px #8B634A;
+    font-weight: 500;
+    text-decoration: underline;
+}
 
 /* ##### HEADER #####*/
 
@@ -218,6 +281,10 @@ header .direita .imagem img{
 @media screen and (max-width: 740px){
     header .direita .imagem{
         width: 100%;
+    }
+
+    .mobile-menu{
+        display: block;
     }
 
     .desktop-menu ul{
