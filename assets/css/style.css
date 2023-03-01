@@ -351,11 +351,11 @@ header .direita .imagem img{
     margin-bottom: 120px;
 }
 
-#novidades .box .text{
+#novidades .box .texto{
     margin-right: 80px;
 }
 
-#novidades .box .text i{
+#novidades .box .texto i{
     position: relative;
     bottom:35px;
     left: 180px;
@@ -454,10 +454,6 @@ header .direita .imagem img{
     height: 90vh;
 }
 
-#contato .conteudo{
-    flex-direction: row;
-}
-
 #contato .container .titulo{
     min-height: 0;
     margin-bottom: 60px;
@@ -471,26 +467,26 @@ header .direita .imagem img{
 #contato .container .esquerda .box{
     width: 100%;
     height: 50vh;
-    background: #c3bcb7;
+    background: #C3BCB7;
 }
 
 #contato .container .esquerda .box h1{
     margin-bottom: 30px;
     margin-top: 30px;
-    color: #1b3b56;
+    color: #1B3B56;
 }
 
 #contato .container .esquerda .box form{
-    width:70%;
-    height:auto;
+    width: 70%;
+    height: auto;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
 #contato .container .esquerda .box form input{
     padding: 10px;
     margin-top: 20px;
-    font-size:16px;
+    font-size: 16px;
     border: none;
     outline: none;
 }
@@ -510,6 +506,79 @@ header .direita .imagem img{
 #contato .container .esquerda .box .social i:hover{
     color: #8B634A;
 }
+
+#contato .container .esquerda .box form input[type=submit]{
+    background: #1B3B56;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#contato .container .esquerda .box form input[type=submit]:hover{
+    background: #8B634A;
+}
+
+#contato .container .direita .box{
+    width: 100%;
+    height: 50vh;
+    background: #C3BCB7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contato .container .direita .box .info{
+    display: flex;
+    flex-direction: row;
+}
+
+#contato .container .direita .box .icones{
+    width: 150px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contato .container .direita .box .icones i{
+    padding: 20px 0;
+    font-size: 32px;
+    color: #1B3B56;
+}
+
+
+#contato .container .direita .box .texto{
+    width:150px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contato .container .direita .box .texto p{
+    padding: 25px 0;
+    font-size:18px;
+    font-weight: 600;
+    color: #1B3B56;
+}
+
+#contato .container .direita .box h1{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #1B3B56;
+}
+
+#contato .container .direita{
+    box-shadow: 0 0 15px #848790;
+    margin: 2%;
+}
+
+#contato .titulo h2{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#contato .conteudo{
+    flex-direction:row;
+}
+
 /* ############## RESPONSIVO ##############*/
 
 @media screen and (max-width: 922px){
@@ -526,17 +595,28 @@ header .direita .imagem img{
 }
 
 @media screen and (max-width: 740px){
+    .desktop-menu ul{
+        display: none;
+    }
+
+    .texto-gd{
+        font-size:42px ;
+    }
+
+    .texto-titulo{
+        font-size: 16px;
+    }
+
+    .mobile-menu ul{
+        display: block;
+    }
+    
     header .direita .imagem{
         width: 100%;
     }
 
-    .mobile-menu{
-        display: block;
-    }
-
-    .desktop-menu ul{
-        display: none;
-
+    .titulo{
+        min-height: 150px;
     }
 
     .down{
@@ -553,12 +633,42 @@ header .direita .imagem img{
         width: 90%;
         margin-top: 20px;
     }
+
+    #menu .box h2{
+        margin-top: 10px;
+     }
+     
+    #menu .box p{
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom:0;
+        color: #fff;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    #contato .direita img{
+        margin-top:60px;
+    }
+
+    footer .container{
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 150px;
+    }
+    footer .container p{
+        margin-top: 20px;
+    }
+
 }
 
+
 @media screen and (max-width: 648px){
-    .esquerda {
+    .lesquerda{
         width: 100%;
-        min-height: auto;
+        min-height:auto;
         padding: 0 2%;
     }
 
@@ -570,7 +680,8 @@ header .direita .imagem img{
     }
 
     .logo{
-        width: 110%;
+        width: 110px;
+        top: 10px;
         left: 5px;
     }
 
@@ -583,16 +694,23 @@ header .direita .imagem img{
         justify-content: flex-start;
     }
 
-    header .direita{
+    header .esquerda{
         margin-top: -100px;
     }
 
     header .direita .imagem{
         width: 60%;
-
     }
 
-    #destaque .container .card{
+    #novidades .right{
+        margin-top: 80px;
+    }
+
+    #novidades  .right img{
+        width: 60%;
+    }
+
+    #novidades  .container .card{
         width: 80%;
         height: auto;
         top: -20px;
@@ -612,6 +730,72 @@ header .direita .imagem img{
         transform: translateY(25%) scale(0.8);
         opacity: 0.4;
         z-index: 0;
+    }
+
+    #contato .conteudo {
+        flex-direction: column;
+    }
+
+    #contato .container .esquerda,
+    #contato .container .direita {
+        height: 38vh;
+    }
+
+    #contato .container .esquerda .box,
+    #contato .container .direita .box{
+        width: 80%;
+        height: 35vh;
+    }
+
+    #contato .container .esquerda .box h1{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    #contato .container .esquerda .box form{
+        width: 80%;
+    }
+
+    #contato .container .esquerda .box input[type=text],
+    #contato .container .esquerda .box input[type=email],
+    #contato .container .esquerda .box input[type=submit]{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    #contato .container .esquerda .box .social{
+        margin-bottom: 20px;
+    }
+
+    #contato .container .esquerda .box i{
+        font-size: 22px;
+    }
+
+    #contato .container .direita .box{
+        width: 80%;
+        height: 35vh;
+        justify-content: flex-start;
+    }
+
+    #contato .container .direita .box h1{
+        font-size: 18px;
+    }
+
+    #contato .container .direita .box .icones{
+        width: 100px;
+        height: 100px;
+    }
+
+    #contato .container .direita .box .icones i {
+        font-size: 22px;
+    }
+
+    #contato .container .direita .box .texto{
+        height: 150px;
+    }
+
+    #contato .container .direita .box .texto p {
+        font-size: 16px;
     }
 }
 
