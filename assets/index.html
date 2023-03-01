@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <title>Loja Virtual</title>
 </head>
 <body>
@@ -17,9 +18,9 @@
                 <div class="desktop-menu">
                     <ul>
                         <li><a href="#Home">Home</a></li>
-                        <li><a href="#About">Novidades</a></li>
-                        <li><a href="#Service">Destaque</a></li>
-                        <li><a href="#Contact">Contato</a></li>
+                        <li><a href="#novidades">Novidades</a></li>
+                        <li><a href="#destaque">Destaque</a></li>
+                        <li><a href="#Contato">Contato</a></li>
                     </ul>
                 </div>
 
@@ -86,7 +87,42 @@
             </div>
         </div>
     </section>
+
+    <section class="max-width bg" id="destaque">
+        <div class="container">
+            <div class="conteudo">
+                <div class="titulo">
+                    <h2 class="texto-md color-cinza">Destaques</h2>
+                    <div class="linha">
+                        <div class="texto-titulo">Roupas</div>
+                    </div>
+                </div>
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2" >
+                <input type="radio" name="slider" id="item-3" >
+                <div class="cards">
+                    <label class="card" for="item-1" id="song-1">
+                        <img src="./image/p1.jpg" alt="">
+                        <button>Comprar agora</button>
+                    </label>
+
+                    <label class="card" for="item-2" id="song-2">
+                        <img src="./image/p1.jpg" alt="">
+                        <button>Comprar agora</button>
+                    </label>
+
+                    <label class="card" for="item-3" id="song-3">
+                        <img src="./image/p1.jpg" alt="">
+                        <button>Comprar agora</button>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
