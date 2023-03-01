@@ -17,14 +17,14 @@ html,body{
 }
 
 .bg{
-    background: url('../image/bg_parede.jpg') no-repeat;
+    background: url('../image/bg_teste.jpg') no-repeat;
     background-size: cover;
     width: 100%;
     height: auto
 }
 
 .bg2{
-    background: url('../image/bg-4.png') no-repeat;
+    background: url('../image/bg_cinza.jpg') no-repeat;
     background-size: cover;
     width: 100%;
     height: auto
