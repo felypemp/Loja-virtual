@@ -1,3 +1,4 @@
+/* ############## GLOBAL ############## */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap');
 
 *{
@@ -446,6 +447,69 @@ header .direita .imagem img{
 }
 
 
+/* ############## CONTATO ##############*/
+
+#contato .container{
+    flex-direction: column;
+    height: 90vh;
+}
+
+#contato .conteudo{
+    flex-direction: row;
+}
+
+#contato .container .titulo{
+    min-height: 0;
+    margin-bottom: 60px;
+}
+
+#contato .container .esquerda{
+    box-shadow: 0 0 15px #848790;
+    margin: 2%;
+}
+
+#contato .container .esquerda .box{
+    width: 100%;
+    height: 50vh;
+    background: #c3bcb7;
+}
+
+#contato .container .esquerda .box h1{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #1b3b56;
+}
+
+#contato .container .esquerda .box form{
+    width:70%;
+    height:auto;
+    display: flex;
+    flex-direction: column
+}
+
+#contato .container .esquerda .box form input{
+    padding: 10px;
+    margin-top: 20px;
+    font-size:16px;
+    border: none;
+    outline: none;
+}
+
+#contato .container .esquerda .box .social{
+    color: #1B3B56;
+    font-size: 32px;
+}
+
+#contato .container .esquerda .box .social i{
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#contato .container .esquerda .box .social i:hover{
+    color: #8B634A;
+}
 /* ############## RESPONSIVO ##############*/
 
 @media screen and (max-width: 922px){
