@@ -580,6 +580,22 @@ header .direita .imagem img{
 }
 
 /* ############## RESPONSIVO ##############*/
+footer .container{
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #C3BCB7;
+}
+
+footer .container p{
+    font-weight: 600;
+    color: #1B3B56;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* ############## RESPONSIVO ##############*/
 
 @media screen and (max-width: 922px){
     .texto-pq{
@@ -666,7 +682,7 @@ header .direita .imagem img{
 
 
 @media screen and (max-width: 648px){
-    .lesquerda{
+    .esquerda{
         width: 100%;
         min-height:auto;
         padding: 0 2%;
@@ -738,7 +754,7 @@ header .direita .imagem img{
 
     #contato .container .esquerda,
     #contato .container .direita {
-        height: 38vh;
+        height: 42vh;
     }
 
     #contato .container .esquerda .box,
@@ -764,7 +780,7 @@ header .direita .imagem img{
     }
 
     #contato .container .esquerda .box .social{
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     #contato .container .esquerda .box i{
@@ -787,7 +803,7 @@ header .direita .imagem img{
     }
 
     #contato .container .direita .box .icones i {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     #contato .container .direita .box .texto{
