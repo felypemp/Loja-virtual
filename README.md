@@ -30,6 +30,9 @@ O site conta com diversas funcionalidades para oferecer uma experiência complet
 - Javascript
 - JQuery
 
+## Deploy
+https://loja-virtual-mu.vercel.app
+
 ## Screenshots
 
 
