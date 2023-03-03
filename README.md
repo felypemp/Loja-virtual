@@ -14,8 +14,8 @@ O site conta com diversas funcionalidades para oferecer uma experiência complet
 
 * Estruturar uma loja virtual.
 * Utilização de FlexBox.
-* Utilzação de um carroussel com Jquery.
-* Tornar o site reponsivo.
+* Utilização de um caroussel com Jquery.
+* Tornar o site responsivo.
 
 ## Melhorias à concluir
 
