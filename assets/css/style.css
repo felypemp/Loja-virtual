@@ -349,6 +349,7 @@ header .direita .imagem img{
     box-shadow: 0 5px 20px #2B2B2B;
     background:transparent;
     margin-bottom: 120px;
+    width: 30%;
 }
 
 #novidades .box .texto{
@@ -390,7 +391,7 @@ header .direita .imagem img{
 
 #destaque .container .cards{
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 100vh;
 }
 
@@ -608,6 +609,7 @@ footer .container p{
     .texto-gd{
         font-size: 54px;
     }
+
 }
 
 @media screen and (max-width: 740px){
@@ -643,6 +645,10 @@ footer .container p{
 
     .box{
         width:60%;
+    }
+
+    #novidades .box {
+        width:50%;
     }
 
     #novidades .box img{
@@ -684,6 +690,11 @@ footer .container p{
 
 
 @media screen and (max-width: 648px){
+    .logo{
+        width: 100px;
+        height: 60px;
+    }
+
     .esquerda{
         width: 100%;
         min-height:auto;
@@ -694,13 +705,6 @@ footer .container p{
         width: 100%;
         min-height: auto;
         padding: 0 2%;
-        margin-top: -60px;
-    }
-
-    .logo{
-        width: 110px;
-        top: 10px;
-        left: 5px;
     }
 
     img{
@@ -726,6 +730,13 @@ footer .container p{
 
     #novidades  .right img{
         width: 60%;
+    }
+
+    #destaque .container .cards{
+        
+        width: 80%;
+        height: 50vh;
+
     }
 
     #novidades  .container .card{
@@ -820,5 +831,8 @@ footer .container p{
 @media screen and (max-width: 428px){
     header .direita .imagem{
         width: 80%;
+    }
+    #novidades .box {
+        width:70%;
     }
 }
