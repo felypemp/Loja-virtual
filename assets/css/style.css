@@ -671,10 +671,6 @@ footer .container p{
         display: block;
     }
 
-    #contato .direita img{
-        margin-top:60px;
-    }
-
     footer .container{
         justify-content: space-evenly;
         flex-direction: column;
@@ -763,6 +759,7 @@ footer .container p{
 
     #contato .conteudo {
         flex-direction: column;
+        margin-bottom: 100px;
     }
 
     #contato .container .esquerda,
@@ -835,4 +832,43 @@ footer .container p{
     #novidades .box {
         width:70%;
     }
+
+    #contato .container {
+        height: auto;
+    }
+
+    #contato .conteudo {
+        margin-top: 70px;
+    }
+
+    #contato .container .esquerda {
+        height: 50vh;
+    }
+
+    #contato .container .esquerda .box{
+        height: 45vh;
+    }
+
+    #contato .container .direita .box h1{
+        font-size: 12px;
+    }
+
+    #contato .container .direita .box .icones{
+        width: 80px;
+        height: 80px;
+    }
+
+    #contato .container .direita .box .icones i {
+        font-size: 16px;
+    }
+
+    #contato .container .direita .box .texto{
+        height: 50px;
+    }
+
+    #contato .container .direita .box .texto p {
+        font-size: 12px;
+        padding: 20px 0;
+    }
+
 }
